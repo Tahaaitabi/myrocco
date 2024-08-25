@@ -1,12 +1,12 @@
 {
   "Guelmim-Oued Noun Region": [
     {
-      "Note": "Data collected from 'https://www.hcp.ma'. There is no data available past 2014 until the next census is done. I'll check quarterly for updates."
+      "Note": "Data collected from 'https://www.hcp.ma'. There is no data available past 2014 until the next census is done. I'll check quarterly for updates since some numbers have been updated as recently as 2021."
     },
     {
       "id": 1,
       "Province": "Guelmim",
-      "Total municipal population": "[414,489]",
+      "Total municipal population": "[454,512]",
       "Density of population hab/km²": "[8.25]",
       "Subdivisions": [
         {
