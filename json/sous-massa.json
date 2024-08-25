@@ -1,0 +1,46 @@
+{
+  "Sous-Massa(2017-2018)": [
+    {
+      "id": 1,
+      "Name": "PREFECTURE AGADIR - IDA OUTANANE",
+      "Location": "Located in the northwest of the region: 2300 km²",
+      "Contains": "1 urban commune, 12 rural.",
+      "Inhabitants": "(261 inhabitants/km²): 600,599."
+    },
+    {
+      "id": 2,
+      "Name": "PREFECTURE OF D’INEZGANE - AÏT MELLOUL",
+      "Location": "Located in south of Agadir: 300 km²",
+      "Contains": "3 urban and 3 rural communes.",
+      "Inhabitants": "(1,847 inhabitants/km²): 541,118."
+    },
+    {
+      "id": 3,
+      "Name": "PROVINCE OF CHTOUKA - AÏT BAHA",
+      "Location": "Located in west of the region: 3 600 km²",
+      "Contains": "2 urban communes, 20 rural.",
+      "Inhabitants": "(105 inhabitants/km²): 371,102."
+    },
+    {
+      "id": 4,
+      "Name": "PROVINCE OF TIZNIT",
+      "Location": "Located in the southwest of the region: 5 091 km²",
+      "Contains": "2 urban communes, 23 rural.",
+      "Inhabitants": "(48 inhabitants/km²): 207,367."
+    },
+    {
+      "id": 5,
+      "Name": "PROVINCE OF TAROUDANNT",
+      "Location": "Located in the north-east of the region: 16 500 km²",
+      "Contains": "7 urban communes, 82 rural.",
+      "Inhabitants": "(51 inhabitants/km²): 838,820."
+    },
+    {
+      "id": 6,
+      "Name": "PROVINCE OF TATA",
+      "Location": "Located in the south east of the region: 25 000 km²",
+      "Contains": "2 urban communes, 16 rural.",
+      "Inhabitants": "(5 inhabitants/km²): 117,841."
+    }
+  ]
+}
