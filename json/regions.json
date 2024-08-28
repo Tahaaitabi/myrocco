@@ -1330,7 +1330,7 @@
                           "id": 33,
                           "Name": "Imaouen",
                           "Geographic Code": "541.03.09.",
-                          "Coordinates": "",
+                          "Coordinates": "30.049390071535555, -8.578911408176648",
                           "Population": "[3,103]",
                           "Households": "[639]",
                           "Foreign Population": 0
@@ -1339,7 +1339,7 @@
                           "id": 34,
                           "Name": "Imi N'Tayart",
                           "Geographic Code": "541.03.11.",
-                          "Coordinates": "",
+                          "Coordinates": "30.32847455636361, -8.392205115695843",
                           "Population": "[2,366]",
                           "Households": "[624]",
                           "Foreign Population": 0
@@ -1348,7 +1348,7 @@
                           "id": 35,
                           "Name": "Imilmaiss",
                           "Geographic Code": "541.05.13.",
-                          "Coordinates": "",
+                          "Coordinates": "30.90273593782567, -8.83162525729062",
                           "Population": "[7,398]",
                           "Households": "[1,188]",
                           "Foreign Population": 0
@@ -1357,7 +1357,7 @@
                           "id": 36,
                           "Name": "Imoulass",
                           "Geographic Code": "541.09.27.",
-                          "Coordinates": "",
+                          "Coordinates": "30.744154778491986, -8.76646894905257",
                           "Population": "[9,320]",
                           "Households": "[1,648]",
                           "Foreign Population": 0
@@ -1366,7 +1366,7 @@
                           "id": 37,
                           "Name": "Irherm",
                           "Geographic Code": "541.01.05.",
-                          "Coordinates": "",
+                          "Coordinates": "30.08576449521369, -8.459462857803734",
                           "Population": "[4,624]",
                           "Households": "[948]",
                           "Foreign Population": 0
@@ -1375,7 +1375,7 @@
                           "id": 38,
                           "Name": "Issen",
                           "Geographic Code": "541.05.15.",
-                          "Coordinates": "",
+                          "Coordinates": "30.430213322506, -9.258402111039528",
                           "Population": "[10,624]",
                           "Households": "[1,755]",
                           "Foreign Population": 2
@@ -1384,7 +1384,7 @@
                           "id": 39,
                           "Name": "Lagfifat",
                           "Geographic Code": "541.05.17.",
-                          "Coordinates": "",
+                          "Coordinates": "30.331717364236173, -9.258670591455642",
                           "Population": "[17,322]",
                           "Households": "[2,814]",
                           "Foreign Population": 0
@@ -1393,7 +1393,7 @@
                           "id": 40,
                           "Name": "Lakhnafif",
                           "Geographic Code": "541.05.19.",
-                          "Coordinates": "",
+                          "Coordinates": "30.417879255307323, -9.037760553441466",
                           "Population": "[8,881]",
                           "Households": "[1,513]",
                           "Foreign Population": 0
@@ -1402,7 +1402,7 @@
                           "id": 41,
                           "Name": "Lamhadi",
                           "Geographic Code": "541.05.21.",
-                          "Coordinates": "",
+                          "Coordinates": "30.287074439637674, -9.197186087375496",
                           "Population": "[10,651]",
                           "Households": "[1,632]",
                           "Foreign Population": 0
@@ -1411,7 +1411,7 @@
                           "id": 42,
                           "Name": "Lamhara",
                           "Geographic Code": "541.04.29.",
-                          "Coordinates": "",
+                          "Coordinates": "i30.56780654542692, -8.488136517131784",
                           "Population": "[10,519]",
                           "Households": "[1,557]",
                           "Foreign Population": 0
@@ -1420,7 +1420,7 @@
                           "id": 43,
                           "Name": "Lamnizla",
                           "Geographic Code": "541.09.31.",
-                          "Coordinates": "",
+                          "Coordinates": "30.611813302150452, -9.07957544083338",
                           "Population": "[4,994]",
                           "Households": "[773]",
                           "Foreign Population": 0
@@ -1429,7 +1429,7 @@
                           "id": 44,
                           "Name": "Machraa El Ain",
                           "Geographic Code": "541.05.23.",
-                          "Coordinates": "",
+                          "Coordinates": "30.428242523397714, -8.896973657521963",
                           "Population": "[9,832]",
                           "Households": "[1,756]",
                           "Foreign Population": 0
@@ -1438,7 +1438,7 @@
                           "id": 45,
                           "Name": "Nihit",
                           "Geographic Code": "541.03.13.",
-                          "Coordinates": "",
+                          "Coordinates": "30.325607187023667, -8.468357323661397",
                           "Population": "[2,357]",
                           "Households": "[549]",
                           "Foreign Population": 0
@@ -1447,7 +1447,7 @@
                           "id": 46,
                           "Name": "Oualqadi",
                           "Geographic Code": "541.03.15.",
-                          "Coordinates": "",
+                          "Coordinates": "30.23030481126488, -8.478132488195229",
                           "Population": "[3,027]",
                           "Households": "[728]",
                           "Foreign Population": 0
@@ -1456,256 +1456,229 @@
                           "id": 47,
                           "Name": "Oulad Aissa",
                           "Geographic Code": "541.04.33.",
-                          "Coordinates": "",
+                          "Coordinates": "30.49192508973993, -8.817855606164283",
                           "Population": "[9,736]",
                           "Households": "[1,636]",
                           "Foreign Population": 0
                         },
                         {
                           "id": 48,
-                          "Name": "Oulad Berhil",
-                          "Geographic Code": "541.01.07.",
-                          "Coordinates": "",
-                          "Population": "[15,369]",
-                          "Households": "[2,904]",
-                          "Foreign Population": 6
-                        },
-                        {
-                          "id": 49,
-                          "Name": "Oulad Teima",
-                          "Geographic Code": "541.01.09.",
-                          "Coordinates": "",
-                          "Population": "[66,183]",
-                          "Households": "[13,144]",
-                          "Foreign Population": 23
-                        },
-                        {
-                          "id": 50,
                           "Name": "Ouneine",
                           "Geographic Code": "541.04.35.",
-                          "Coordinates": "",
+                          "Coordinates": "30.867140988068144, -8.185196152659572",
                           "Population": "[8,417]",
                           "Households": "[1,379]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 51,
+                          "id": 49,
                           "Name": "Ouzioua",
                           "Geographic Code": "541.04.37.",
-                          "Coordinates": "",
+                          "Coordinates": "30.730376410458096, -8.033665761529777",
                           "Population": "[7,467]",
                           "Households": "[1,194]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 52,
+                          "id": 50,
                           "Name": "Sidi Abdellah Ou Said",
                           "Geographic Code": "541.04.39.",
-                          "Coordinates": "",
+                          "Coordinates": "30.752923388194613, -8.683218991652236",
                           "Population": "[4,014]",
                           "Households": "[662]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 53,
+                          "id": 51,
                           "Name": "Sidi Ahmed Ou Abdallah",
                           "Geographic Code": "541.09.41.",
-                          "Coordinates": "",
+                          "Coordinates": "30.336042119528955, -8.568405587545113",
                           "Population": "[4,543]",
                           "Households": "[822]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 54,
+                          "id": 52,
                           "Name": "Sidi Ahmed Ou Amar",
                           "Geographic Code": "541.05.25.",
-                          "Coordinates": "",
+                          "Coordinates": "30.420352838896015, -9.164351475499016",
                           "Population": "[13,753]",
                           "Households": "[2,287]",
                           "Foreign Population": 2
                         },
                         {
-                          "id": 55,
+                          "id": 53,
                           "Name": "Sidi Boaal",
                           "Geographic Code": "541.03.17.",
-                          "Coordinates": "",
+                          "Coordinates": "29.944406586934484, -8.513948397042663",
                           "Population": "[4,042]",
                           "Households": "[855]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 56,
+                          "id": 54,
                           "Name": "Sidi Borja",
                           "Geographic Code": "541.09.43.",
-                          "Coordinates": "",
+                          "Coordinates": "30.458401634160033, -8.833095858539847",
                           "Population": "[9,085]",
                           "Households": "[1,575]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 57,
+                          "id": 55,
                           "Name": "Sidi Boumoussa",
                           "Geographic Code": "541.05.27.",
-                          "Coordinates": "",
+                          "Coordinates": "30.398467026993504, -9.243311704593273",
                           "Population": "[13,727]",
                           "Households": "[2,506]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 58,
+                          "id": 56,
                           "Name": "Sidi Dahmane",
                           "Geographic Code": "541.09.45.",
-                          "Coordinates": "",
+                          "Coordinates": "30.496892330281888, -8.822878825183254",
                           "Population": "[8,414]",
                           "Households": "[1,560]",
                           "Foreign Population": 5
                         },
                         {
-                          "id": 59,
+                          "id": 57,
                           "Name": "Sidi Hsaine",
                           "Geographic Code": "541.07.15.",
-                          "Coordinates": "",
+                          "Coordinates": "30.470363173408902, -7.770664108331807",
                           "Population": "[7,507]",
                           "Households": "[1,222]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 60,
+                          "id": 58,
                           "Name": "Sidi Moussa Lhamri",
                           "Geographic Code": "541.05.29.",
-                          "Coordinates": "",
+                          "Coordinates": "30.471193942521857, -9.155341090758851",
                           "Population": "[12,074]",
                           "Households": "[1,826]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 61,
+                          "id": 59,
                           "Name": "Sidi Mzal",
                           "Geographic Code": "541.03.19.",
-                          "Coordinates": "",
+                          "Coordinates": "29.800185421023173, -8.888240106773136",
                           "Population": "[2,503]",
                           "Households": "[631]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 62,
+                          "id": 60,
                           "Name": "Sidi Ouaaziz",
                           "Geographic Code": "541.04.47.",
-                          "Coordinates": "",
+                          "Coordinates": "30.711197384513614, -8.34354273065503",
                           "Population": "[7,554]",
                           "Households": "[1,204]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 63,
+                          "id": 61,
                           "Name": "Tabia",
                           "Geographic Code": "541.03.21.",
-                          "Coordinates": "",
+                          "Coordinates": "30.730672757708664, -8.018393129704299",
                           "Population": "[2,329]",
                           "Households": "[487]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 64,
+                          "id": 62,
                           "Name": "Tafingoult",
                           "Geographic Code": "541.04.49.",
-                          "Coordinates": "",
+                          "Coordinates": "30.762828283299875, -8.38971929092385",
                           "Population": "[6,559]",
                           "Households": "[1,070]",
                           "Foreign Population": 1
                         },
                         {
-                          "id": 65,
+                          "id": 63,
                           "Name": "Tafraouten",
                           "Geographic Code": "541.09.51.",
-                          "Coordinates": "",
+                          "Coordinates": "30.57337845446865, -8.291413744629388",
                           "Population": "[9,328]",
                           "Households": "[1,615]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 66,
+                          "id": 64,
                           "Name": "Talgjount",
                           "Geographic Code": "541.04.53.",
-                          "Coordinates": "",
+                          "Coordinates": "30.729760005398916, -8.546097400959505",
                           "Population": "[5,662]",
                           "Households": "[911]",
                           "Foreign Population": 1
                         },
                         {
-                          "id": 67,
+                          "id": 65,
                           "Name": "Taliouine",
                           "Geographic Code": "541.01.11.",
-                          "Coordinates": "",
+                          "Coordinates": "30.532210490122374, -7.925201607451888",
                           "Population": "[5,844]",
                           "Households": "[1,120]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 68,
+                          "id": 66,
                           "Name": "Talmakante",
                           "Geographic Code": "541.05.31.",
-                          "Coordinates": "",
+                          "Coordinates": "30.851456062221974, -8.934250722923592",
                           "Population": "[4,369]",
                           "Households": "[798]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 69,
+                          "id": 67,
                           "Name": "Tamaloukte",
                           "Geographic Code": "541.09.55.",
-                          "Coordinates": "",
+                          "Coordinates": "30.609024433991966, -8.839758298940408",
                           "Population": "[4,982]",
                           "Households": "[886]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 70,
+                          "id": 68,
                           "Name": "Taouyalte",
                           "Geographic Code": "541.07.17.",
-                          "Coordinates": "",
+                          "Coordinates": "30.808248859638727, -7.788633002869532",
                           "Population": "[7,818]",
                           "Households": "[1,258]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 71,
-                          "Name": "Taroudannt",
-                          "Geographic Code": "541.01.13.",
-                          "Coordinates": "",
-                          "Population": "[69,489]",
-                          "Households": "[14,775]",
-                          "Foreign Population": 74
-                        },
-                        {
-                          "id": 72,
+                          "id": 69,
                           "Name": "Tassousfi",
                           "Geographic Code": "541.07.19.",
-                          "Coordinates": "",
+                          "Coordinates": "30.49010521360915, -7.873343918528477",
                           "Population": "[7,308]",
                           "Households": "[1,207]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 73,
+                          "id": 70,
                           "Name": "Tataoute",
                           "Geographic Code": "541.03.23.",
-                          "Coordinates": "",
+                          "Coordinates": "30.241354673191, -8.718180510336001",
                           "Population": "[5,630]",
                           "Households": "[1,109]",
                           "Foreign Population": 1
                         },
                         {
-                          "id": 74,
+                          "id": 71,
                           "Name": "Tazemmourt",
                           "Geographic Code": "541.09.57.",
-                          "Coordinates": "",
+                          "Coordinates": "30.40472777910016, -8.82924719031495",
                           "Population": "[5,676]",
                           "Households": "[985]",
                           "Foreign Population": 0
                         },
                         {
-                          "id": 75,
+                          "id": 72,
                           "Name": "Tidsi Nissendalene",
                           "Geographic Code": "541.05.33.",
                           "Coordinates": "",
@@ -1714,7 +1687,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 76,
+                          "id": 73,
                           "Name": "Tigouga",
                           "Geographic Code": "541.04.59.",
                           "Coordinates": "",
@@ -1723,7 +1696,7 @@
                           "Foreign Population": 1
                         },
                         {
-                          "id": 77,
+                          "id": 74,
                           "Name": "Tindine",
                           "Geographic Code": "541.03.25.",
                           "Coordinates": "",
@@ -1732,7 +1705,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 78,
+                          "id": 75,
                           "Name": "Tinzart",
                           "Geographic Code": "541.04.61.",
                           "Coordinates": "",
@@ -1741,7 +1714,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 79,
+                          "id": 76,
                           "Name": "Tiout",
                           "Geographic Code": "541.09.63.",
                           "Coordinates": "",
@@ -1750,7 +1723,7 @@
                           "Foreign Population": 1
                         },
                         {
-                          "id": 80,
+                          "id": 77,
                           "Name": "Tisfane",
                           "Geographic Code": "541.03.27.",
                           "Coordinates": "",
@@ -1759,7 +1732,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 81,
+                          "id": 78,
                           "Name": "Tisrasse",
                           "Geographic Code": "541.04.65.",
                           "Coordinates": "",
@@ -1768,7 +1741,7 @@
                           "Foreign Population": 1
                         },
                         {
-                          "id": 82,
+                          "id": 79,
                           "Name": "Tizgzaouine",
                           "Geographic Code": "541.07.21.",
                           "Coordinates": "",
@@ -1777,7 +1750,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 83,
+                          "id": 80,
                           "Name": "Tizi N'Test",
                           "Geographic Code": "541.04.67.",
                           "Coordinates": "",
@@ -1786,7 +1759,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 84,
+                          "id": 81,
                           "Name": "Toubkal",
                           "Geographic Code": "541.07.23.",
                           "Coordinates": "",
@@ -1795,7 +1768,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 85,
+                          "id": 82,
                           "Name": "Toufelaazt",
                           "Geographic Code": "541.03.29.",
                           "Coordinates": "",
@@ -1804,7 +1777,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 86,
+                          "id": 83,
                           "Name": "Toughmart",
                           "Geographic Code": "541.04.69.",
                           "Coordinates": "",
@@ -1813,7 +1786,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 87,
+                          "id": 84,
                           "Name": "Toumliline",
                           "Geographic Code": "541.03.31.",
                           "Coordinates": "",
@@ -1822,7 +1795,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 88,
+                          "id": 85,
                           "Name": "Zagmouzen",
                           "Geographic Code": "541.07.25.",
                           "Coordinates": "",
@@ -1831,7 +1804,7 @@
                           "Foreign Population": 0
                         },
                         {
-                          "id": 89,
+                          "id": 86,
                           "Name": "Zaouia Sidi Tahar",
                           "Geographic Code": "541.09.71.",
                           "Coordinates": "",
