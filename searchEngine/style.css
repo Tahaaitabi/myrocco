@@ -1,3 +1,12 @@
+:root {
+  /* Colors */
+  --light-1: rgba(0,0,0,0.1); 
+  --light-3: rgba(0,0,0,0.3); 
+  --light-4: rgba(0,0,0,0.4);
+  --light-5: rgba(0,0,0,0.5);
+  /* Shadows */
+  --shadow-300: 0 0 .3rem rgba(0,0,0,0.8);
+}
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +21,7 @@ img, svg {
   max-width: 100%;
 }
 body {
-  background: rgba(0.0.0.0.1);
+  background: var(--light-1);
 }
 main {
   display: flex;
@@ -20,33 +29,47 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-inline: 5rem;
+}
+.form {
+  width: 100%;
 }
 .search {
-  width: max-content;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: .5rem;
-  background: rgba(0,0,0,0.1);
-  border-radius: 1rem;
+  background: var(--light-1);
+  border-radius: 2rem;
   transition: ease-out .3s;
 } 
 .search:focus-within {
-  box-shadow: 0 0 .3rem rgba(0,0,0,0.8);
+  box-shadow: var(--shadow-300);
   transition: ease-in .2s;
 }
 .search-icon {
-  width: 1rem;
-  margin-right: .5rem;
-  color: rgb(0,0,0,0.4);
+  width: 2.5rem;
+  margin-left: 1rem;
+  color: var(--light-4);
 }
 .search-input {
   background: transparent;
-  margin-right: .5rem;
+  margin-inline: 1rem;
   outline: transparent;
   border: transparent;
-  color: rgb(0,0,0,0.4);
+  color: var(--light-5);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  width: 100%;
+  
 }
-
-
-
-
+.search-results {
+  display: block;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: .2rem solid var(--light-3);
+  width: 100%
+}
+.search-results > * {
+  padding: 1rem;
+}
