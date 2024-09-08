@@ -17,6 +17,8 @@ let searchQuery = '';
 let regionNames = [];
 let regionData = [];
 let regionSubdivs = [];
+let regionPrefectures = [];
+let regionProvinces = [];
 //Fetch
 fetch("../json/regions.json")
   .then(res => res.json())
@@ -39,9 +41,17 @@ fetch("../json/regions.json")
     let subDivs = [];
     Object.keys(subDivs.push(gON[0][0].Subdivisions))
     pushEntries(subDivs,regionSubdivs)
-    console.log(regionSubdivs)
+    let prefectures = []
+    prefectures.push(regionSubdivs[0][0])
+    let provinces = []
+    provinces.push(regionSubdivs[0][1][1])
+    console.log(prefectures[0][1])
+
+    //Level 3 values:
   });
-// For Loops:
+
+// PUSHING DATA INTO ARRAYS:
+
 // Push region Names
 pushKeys = (array, globalArray) => {
   for (let i = 0; i < array.length; i++) {
