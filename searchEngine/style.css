@@ -64,12 +64,11 @@ main {
   
 }
 .search-results {
-  display: block;
+  display: none;
+  flex-direction: column;
   margin-top: 1rem;
   border-radius: 1rem;
   border: .2rem solid var(--light-3);
-  width: 100%
-}
-.search-results > * {
+  width: 100%;
   padding: 1rem;
 }
