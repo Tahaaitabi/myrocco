@@ -1,5 +1,14 @@
 //Elements
 const searchRes = document.getElementById('searchResults');
+const searchInput = document.getElementById('search-input');
+//Event Handlers
+searchInput.addEventListener("keypress", (e) => {
+  if (e.key === 'Enter') {
+    let query = '';
+    query = searchInput.value;
+    console.log(query)
+  }
+});
 //Variables
 let searchQuery = '';
 let regionNames = [];
@@ -11,15 +20,12 @@ fetch("../json/regions.json")
   .then(res => res.json())
   .then(data => {
     const regions = data.Regions;
-
     //Level 1 keys:
-
     //Region Names:
     let regionNames = [];
     Object.keys(regionNames.push(regions))[0]
     //Pushes the keys containing the names of the regions to the globally accessibly arrray 'regionNames'.
     getRegionName(regionNames)
-
     //Level 1 values:
     let gON = [];
     let sM = [];
