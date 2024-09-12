@@ -43,7 +43,6 @@ const startSearch = (query) => {
               // Recursively check nested objects and pass the current path + current key
               if (typeof item[key] === 'object') {
                 getObject(item[key], currentPath, key);  // Pass key as the parentKey
-                return
               }
             }
           });
