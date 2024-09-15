@@ -2,55 +2,64 @@
 const searchRes = document.getElementById('searchResults');
 const searchInput = document.getElementById('search-input');
 
+//Helper functions
+const display = (item) => {
+  searchRes.style.display = "flex";
+  if (typeof item === 'object' && item !== null) {
+      searchRes.innerHTML = '';
+    const match = document.createElement("div")
+      searchRes.innerHTML = `<p><a href="#" id="resultLink">${JSON.stringify(item)}</a></p>`;
+  }
+}
+
 // Event Handlers
-searchInput.addEventListener("blur", (e) => {
-  searchRes.style.display = "none";
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+  }
 });
+
 searchInput.addEventListener("input", (e) => {
   let query = e.target.value.trim().toLowerCase();
   if (query.length > 0) {
     startSearch(query);  // Pass the query dynamically
   } else {
     console.log('Enter something to search...');
+    searchRes.innerHTML = '';
+    searchRes.style.display = "none";
   }
 });
 
+// startSearch function
 const startSearch = (query) => {
   fetch('../json/regions.json')
     .then(res => res.json())
     .then(data => {
       const regions = data.Regions;
       let result = [];
-
-      // Helper function to build the path using parent key names
-      const getObject = (arr, parentPath = "", parentKey = "") => {
-        if (Array.isArray(arr)) {
-          arr.forEach(item => {
-            // Dynamically generate current path based on available key names
-            const currentName = item.Name || item.Province || item.id;  // Fallback to id if Name/Province is not available
-            const currentPath = parentPath ? `${parentPath} > ${parentKey} > ${currentName}` : currentName;
-
-            // Check for string matches
-            for (const key in item) {
-              if (typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
-                // Check if this combination of path and item is already in result (avoid duplicates)
-                if (!result.some(existingItem => existingItem.path === currentPath)) {
-                  result.push({ ...item, path: currentPath });  // Store item with its unique path
-                  //                 console.log(item);  // Log matching object
+      const getData = (obj) => {
+        if (typeof obj === 'object' && obj !== null) {
+          if (!Array.isArray(obj)) {
+            for (const prop in obj) {
+              let entry = obj[prop];
+              if (typeof entry === 'string' && entry.toLowerCase().includes(query)) {
+                if (!result.some(match => JSON.stringify(match) === JSON.stringify(obj))) {
+                  result.push(obj);
                 }
               }
-
-              // Recursively check nested objects and pass the current path + current key
-              if (typeof item[key] === 'object') {
-                getObject(item[key], currentPath, key);  // Pass key as the parentKey
-              }
+              getData(entry);
             }
-          });
+          } else {
+            obj.forEach(array => {
+              getData(array);
+            });
+          }
         }
-      };
-
-      getObject(regions);
-      console.log(`Filtered Results with '${query}':`, result);
+      }
+      getData(regions);
+      searchRes.innerHTML = '';
+      result.forEach(item => {
+        display(item);
+      });
     });
-};
-
+}
