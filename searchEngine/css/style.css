@@ -1,18 +1,60 @@
 :root {
   /* Colors */
-  --light-1: rgba(0,0,0,0.1); 
-  --light-3: rgba(0,0,0,0.3); 
-  --light-4: rgba(0,0,0,0.4);
-  --light-5: rgba(0,0,0,0.5);
+  /* dark */
+  --dark-1: rgba(0,0,0,0.1); 
+  --dark-2: rgba(0,0,0,0.2); 
+  --dark-3: rgba(0,0,0,0.3); 
+  --dark-4: rgba(0,0,0,0.4);
+  --dark-5: rgba(0,0,0,0.5);
+  --dark-6: rgba(0,0,0,0.6);
+  --dark-7: rgba(0,0,0,0.7);
+  --dark-8: rgba(0,0,0,0.8);
+  --dark-9: rgba(0,0,0,0.9);
+ /* light */
+  --light-1: rgba(255,255,255,0.1); 
+  --light-2: rgba(255,255,255,0.2); 
+  --light-3: rgba(255,255,255,0.3); 
+  --light-4: rgba(255,255,255,0.4);
+  --light-5: rgba(255,255,255,0.5);
+  --light-6: rgba(255,255,255,0.6);
+  --light-7: rgba(255,255,255,0.7);
+  --light-8: rgba(255,255,255,0.8);
+  --light-9: rgba(255,255,255,0.9);
+
   /* Shadows */
-  --shadow-300: 0 0 .3rem rgba(0,0,0,0.8);
+  /*light*/
+  --shadow-301-light: 0 0 .3rem var(--light-1);
+  --shadow-302-light: 0 0 .3rem var(--light-2);
+  --shadow-303-light: 0 0 .3rem var(--light-3);
+  --shadow-304-light: 0 0 .3rem var(--light-4);
+  --shadow-305-light: 0 0 .3rem var(--light-5);
+  --shadow-306-light: 0 0 .3rem var(--light-6);
+  --shadow-307-light: 0 0 .3rem var(--light-7);
+  --shadow-308-light: 0 0 .8rem var(--light-8);
+  --shadow-309-light: 0 0 .8rem var(--light-9);
+  /*dark*/
+  --shadow-301-dark: 0 0 .3rem var(--dark-1);
+  --shadow-302-dark: 0 0 .3rem var(--dark-2);
+  --shadow-303-dark: 0 0 .3rem var(--dark-3);
+  --shadow-304-dark: 0 0 .3rem var(--dark-4);
+  --shadow-305-dark: 0 0 .3rem var(--dark-5);
+  --shadow-306-dark: 0 0 .3rem var(--dark-6);
+  --shadow-307-dark: 0 0 .3rem var(--dark-7);
+  --shadow-308-dark: 0 0 .8rem var(--dark-8);
+  --shadow-309-dark: 0 0 .9rem var(--dark-9);
+
+  /* Font size */
+  --small: 0.8rem;
+  --normal: 1.2rem;
+  --medium: 1.5rem;
+  --large: 1.8;
 }
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-ul, li {
+ul, li, a {
   text-decoration: none;
   list-style: "";
 }
@@ -21,7 +63,8 @@ img, svg {
   max-width: 100%;
 }
 body {
-  background: var(--light-1);
+background: linear-gradient(var(--dark-1),var(--dark-6),var(--dark-3) ),url('../assets/images/riders.jpg') ;
+background-position: center;
 }
 main {
   display: flex;
@@ -39,13 +82,14 @@ main {
   display: flex;
   align-items: center;
   padding: .5rem;
-  background: var(--light-1);
+  background: var(--light-2);
+  backdrop-filter: blur(5px);
   border-radius: 2rem;
-  transition: ease-out .3s;
+  transition: ease-out .2s;
 } 
 .search:focus-within {
-  box-shadow: var(--shadow-300);
-  transition: ease-in .2s;
+  box-shadow: var(--shadow-308-light);
+  transition: ease-in .150s;
 }
 .search-icon {
   width: 2.5rem;
@@ -57,18 +101,77 @@ main {
   margin-inline: 1rem;
   outline: transparent;
   border: transparent;
-  color: var(--light-5);
-  font-size: 1.5rem;
-  line-height: 1.6;
+  color: var(--light-4);
+  font-size: var(--medium);
+  line-height: 2;
   width: 100%;
-  
+
 }
 .search-results {
   display: none;
+  background: var(--light-1);
+  backdrop-filter: blur(10px);
   flex-direction: column;
   margin-top: 1rem;
   border-radius: 1rem;
-  border: .2rem solid var(--light-3);
   width: 100%;
+  max-height: 50vh;
   padding: 1rem;
+  overflow-y: auto;
+  gap: .5rem;
+  transition: ease-out .2s;
 }
+.search-results:focus-within,
+.search-results:hover {
+  box-shadow: var(--shadow-305-light);
+  transition: ease-in .150s;
+}
+
+.result-container {
+  font-size: var(--normal);
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 100%;
+  transition: all ease-out .150s;
+}
+.result-container:hover {
+  box-shadow: var(--shadow-306-light);
+  transition: all ease-in .2s;
+}
+
+/* the title of each search result*/
+.result-row {
+  color: var(--light-7);
+  font-weight: bold;
+  font-size: var(--medium);
+  padding-block: .5rem;
+
+}
+/* The data in each object, the whole <ul> */
+.result-info {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;  
+  gap: 1.2rem;
+  border: 2px solid var(--light-2);
+  padding: .3rem;
+  border-radius: .3rem;
+/*  background: var(--light-4);*/
+}
+
+/* The whole <li> && each 'key:value' pair */
+.result-info li  {
+
+  & .key {
+    padding: .3rem;
+    color: var(--light-7);
+    font-weight: bold;
+  }
+
+  & .value {
+    padding: .3rem;
+    color: var(--dark-7);
+    font-weight: bold;
+  }
+}
+

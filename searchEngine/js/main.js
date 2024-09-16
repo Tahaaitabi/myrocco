@@ -3,12 +3,43 @@ const searchRes = document.getElementById('searchResults');
 const searchInput = document.getElementById('search-input');
 
 //Helper functions
-const display = (item) => {
-  searchRes.style.display = "flex";
-  if (typeof item === 'object' && item !== null) {
-      searchRes.innerHTML = '';
-    const match = document.createElement("div")
-      searchRes.innerHTML = `<p><a href="#" id="resultLink">${JSON.stringify(item)}</a></p>`;
+const display = (item, query) => {
+  if (query.length === 0) {
+    searchRes.style.display = "none";
+  } else {
+    searchRes.style.display = "flex";
+    if (typeof item === 'object' && item !== null) {
+      let title = '';
+
+      for (const key in item) {
+        if (typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
+          title = item[key];
+          break
+        }
+      }
+
+      //add the title as the first key that matches the query
+      const match = document.createElement("div");
+      match.classList.add("result-container");
+      match.innerHTML = `<p class="result-row">${title}</p>`;
+
+      //add the rest of the information
+      const info = document.createElement("ul");
+      info.classList.add("result-info");
+
+      for(const key in item) {
+        if (key !== title) {
+          const infoItem = document.createElement("li");
+          let value = item[key];
+          infoItem.innerHTML = `<span class="key">${key}</span>: <span class="value">${value}</span>`;
+          info.appendChild(infoItem)
+        }
+      }
+
+      match.appendChild(info);
+      searchRes.appendChild(match);
+
+    }
   }
 }
 
@@ -37,29 +68,40 @@ const startSearch = (query) => {
     .then(data => {
       const regions = data.Regions;
       let result = [];
-      const getData = (obj) => {
+
+      const getData = (obj, level = 'Region') => {
         if (typeof obj === 'object' && obj !== null) {
           if (!Array.isArray(obj)) {
             for (const prop in obj) {
               let entry = obj[prop];
               if (typeof entry === 'string' && entry.toLowerCase().includes(query)) {
                 if (!result.some(match => JSON.stringify(match) === JSON.stringify(obj))) {
-                  result.push(obj);
+                  result.push({ ...obj, Type: level });
                 }
               }
-              getData(entry);
+              getData(entry, level);
             }
           } else {
             obj.forEach(array => {
-              getData(array);
+              let inferredType = level;
+              for (const key in array) {
+                if (typeof array[key] === 'object' && array[key] !== null) {
+                  if (Array.isArray(array[key])) {
+                    inferredType = key
+                    console.log(inferredType)
+                  } 
+                }
+              }
+              getData(array, inferredType);
             });
           }
         }
       }
       getData(regions);
       searchRes.innerHTML = '';
+      console.log(result)
       result.forEach(item => {
-        display(item);
+        display(item, query);
       });
     });
 }
