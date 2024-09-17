@@ -40,7 +40,7 @@
                           "Foreign Population": "26"
                         }
                       ],
-                      "Rural Comunes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Aday",
@@ -232,7 +232,7 @@
                           "Foreign Population": "0"
                         }
                       ],
-                      "Rural Comunes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Arbaa Ait Abdellah",
@@ -415,7 +415,7 @@
                           "Foreign Population": "8"
                         }
                       ],
-                      "Rural Comunes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Msied",
@@ -490,7 +490,7 @@
                           "Foreign Population": "21"
                         } 
                       ],
-                      "Rural Comunes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Aouint Lahna",
@@ -577,7 +577,7 @@
                           "Foreign population": 1925
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Amskroud",
@@ -721,7 +721,7 @@
                           "Households": "23,459"
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Lqliaa",
@@ -780,7 +780,7 @@
                           "Foreign Population": 15
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Ait Mzal",
@@ -1035,7 +1035,7 @@
                           "Foreign population": 74
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Adar",
@@ -1857,7 +1857,7 @@
                           "Foreign Population": 13
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Ait Ouabelli",
@@ -2031,7 +2031,7 @@
                           "Foreign Population": 3 
                         }
                       ],
-                      "Regional Communes": [
+                      "Rural Communes": [
                         {
                           "id": 1,
                           "Name": "Ait Issafen",

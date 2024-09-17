@@ -10,7 +10,6 @@ const display = (item, query) => {
     searchRes.style.display = "flex";
     if (typeof item === 'object' && item !== null) {
       let title = '';
-
       for (const key in item) {
         if (typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
           title = item[key];
@@ -28,9 +27,15 @@ const display = (item, query) => {
       info.classList.add("result-info");
 
       for(const key in item) {
+
+        let value; 
         if (key !== title) {
           const infoItem = document.createElement("li");
-          let value = item[key];
+          value = item[key];
+          if (Array.isArray(value)){
+            value = Object.keys(value[0])
+            value = value.join(" & ", value)
+          }
           infoItem.innerHTML = `<span class="key">${key}</span>: <span class="value">${value}</span>`;
           info.appendChild(infoItem)
         }
@@ -68,6 +73,7 @@ const startSearch = (query) => {
     .then(data => {
       const regions = data.Regions;
       let result = [];
+      let finalResult = [];
 
       const getData = (obj, level = 'Region') => {
         if (typeof obj === 'object' && obj !== null) {
@@ -76,7 +82,8 @@ const startSearch = (query) => {
               let entry = obj[prop];
               if (typeof entry === 'string' && entry.toLowerCase().includes(query)) {
                 if (!result.some(match => JSON.stringify(match) === JSON.stringify(obj))) {
-                  result.push({ ...obj, Type: level });
+                  result.push(obj)
+                  finalResult.push({...obj, Type: level})
                 }
               }
               getData(entry, level);
@@ -88,7 +95,6 @@ const startSearch = (query) => {
                 if (typeof array[key] === 'object' && array[key] !== null) {
                   if (Array.isArray(array[key])) {
                     inferredType = key
-                    console.log(inferredType)
                   } 
                 }
               }
@@ -99,8 +105,7 @@ const startSearch = (query) => {
       }
       getData(regions);
       searchRes.innerHTML = '';
-      console.log(result)
-      result.forEach(item => {
+      finalResult.forEach(item => {
         display(item, query);
       });
     });
