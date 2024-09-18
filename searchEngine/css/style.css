@@ -1,5 +1,8 @@
 :root {
   /* Colors */
+  /* Muted colors */
+  --m-red: rgba(201, 0, 0, 0.8);
+  --m-green: rgba(15, 153, 0, 0.8);
   /* dark */
   --dark-1: rgba(0,0,0,0.1); 
   --dark-2: rgba(0,0,0,0.2); 
@@ -63,8 +66,11 @@ img, svg {
   max-width: 100%;
 }
 body {
-  background: url('../assets/images/myrocco.jpg');
-  background-position: center;
+background: linear-gradient(var(--dark-1),var(--dark-1) ), url('../assets/images/riders.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
 }
 main {
   display: flex;
@@ -86,6 +92,7 @@ main {
   backdrop-filter: blur(10px);
   border-radius: 2rem;
   transition: ease-out .2s;
+  border: 2px solid var(--light-5);
 } 
 .search:focus-within {
   box-shadow: var(--shadow-308-light);
@@ -108,10 +115,11 @@ main {
 }
 .search-results {
   display: none;
-  background: var(--light-1);
+  background: var(--dark-4);
   backdrop-filter: blur(20px);
   flex-direction: column;
   margin-top: 1rem;
+  border: 2px solid var(--light-5);
   border-radius: 1rem;
   width: 100%;
   max-height: 50vh;
@@ -152,10 +160,10 @@ main {
   padding: 1rem;
   flex-direction: column;  
   gap: 1.2rem;
-  border: 2px solid var(--light-2);
+  border: 2px solid var(--light-4);
   padding: .3rem;
   border-radius: .3rem;
-  /*  background: var(--light-4);*/
+  background: var(--light-1);
 }
 
 /* The whole <li> && each 'key:value' pair */
@@ -173,4 +181,3 @@ main {
     font-weight: bold;
   }
 }
-

@@ -16,18 +16,15 @@ const display = (item, query) => {
           break
         }
       }
-
       //add the title as the first key that matches the query
       const match = document.createElement("div");
       match.classList.add("result-container");
       match.innerHTML = `<p class="result-row">${title}</p>`;
-
       //add the rest of the information
       const info = document.createElement("ul");
       info.classList.add("result-info");
 
       for(const key in item) {
-
         let value; 
         if (key !== title) {
           const infoItem = document.createElement("li");
@@ -40,14 +37,11 @@ const display = (item, query) => {
           info.appendChild(infoItem)
         }
       }
-
       match.appendChild(info);
       searchRes.appendChild(match);
-
     }
   }
 }
-
 // Event Handlers
 searchInput.addEventListener("keydown", (e) => {
   if (e.key === 'Enter') {
@@ -65,7 +59,6 @@ searchInput.addEventListener("input", (e) => {
     searchRes.style.display = "none";
   }
 });
-
 // startSearch function
 const startSearch = (query) => {
   fetch('../json/regions.json')
@@ -74,7 +67,7 @@ const startSearch = (query) => {
       const regions = data.Regions;
       let result = [];
       let finalResult = [];
-
+//getData function
       const getData = (obj, level = 'Region') => {
         if (typeof obj === 'object' && obj !== null) {
           if (!Array.isArray(obj)) {
