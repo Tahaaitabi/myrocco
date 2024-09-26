@@ -13,11 +13,11 @@
           "Notes": "- Data collected from 'https://www.hcp.ma'. Some entries do not have newer data than 2004, and there is no data available past 2014(when it comes to population data), until the next census is done, which is due [30th September 2024].\n- Coordinates for places are in the format of ['longitude + ',' + latitude'] so you can just drop them into the Google maps search bar and find the desired location.",
           "Subdivisions": [
             {
-              "Prefectures": 0,
+              "Prefectures": null,
               "Provinces": [
                 {
                   "id": "Guelmim",
-                  "Province": "Guelmim",
+                  "Province Name": "Guelmim",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -209,7 +209,7 @@
                 },
                 {
                   "id": "Sidi-Ifni",
-                  "Province": "Sidi-Ifni",
+                  "Province Name": "Sidi-Ifni",
                   "Subdivision": [
                     {
                       "Municipalities": [
@@ -392,7 +392,7 @@
                 },
                 {
                   "id": "Tan-Tan",
-                  "Province": "Tan-Tan",
+                  "Province Name": "Tan-Tan",
                   "Subdivision": [
                     {
                       "Municipalities": [
@@ -467,7 +467,7 @@
                 },
                 {
                   "id": "Assa-Zag",
-                  "Province": "Assa Zag",
+                  "Province Name": "Assa Zag",
                   "Subdivision": [
                     {
                       "Municipalities": [
@@ -563,7 +563,7 @@
               "Prefectures": [
                 {
                   "id": "Agadir-Ida-Ou-Tanane",
-                  "Prefecture": "Agadir-Ida Ou Tanane",
+                  "Prefecture Name": "Agadir-Ida Ou Tanane",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -692,7 +692,7 @@
                 },
                 {
                   "id": "Inezgane-Äit-Melloul",
-                  "Prefecture": "Inezgane-Äit Melloul",
+                  "Prefecture Name": "Inezgane-Äit Melloul",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -757,7 +757,7 @@
               "Provinces":[
                 {
                   "id": "Chtouka-Äit-Baha",
-                  "Province": "Chtouka-Äit Baha",
+                  "Province Name": "Chtouka-Äit Baha",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -967,7 +967,7 @@
                 },
                 {
                   "id": "Taroudannt",
-                  "Province": "Taroudannt",
+                  "Province Name": "Taroudannt",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -1816,7 +1816,7 @@
                 },
                 {
                   "id": "Tata",
-                  "Province": "Tata",
+                  "Province Name": "Tata",
                   "Subdivisions": [
                     {
                       "Municipalities": [
@@ -2008,7 +2008,7 @@
                 },
                 {
                   "id": "Tiznit",
-                  "Province": "Tiznit",
+                  "Province Name": "Tiznit",
                   "Subdivisions": [
                     {
                       "Municipalities": [

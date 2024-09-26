@@ -61,45 +61,13 @@ searchInput.addEventListener("input", (e) => {
 });
 // startSearch function
 const startSearch = (query) => {
-  fetch('../json/regions.json')
+  fetch(`/api/search?search=${encodeURIComponent(query)}`)
     .then(res => res.json())
     .then(data => {
-      const regions = data.Regions;
-      let result = [];
-      let finalResult = [];
-//getData function
-      const getData = (obj, level = 'Region') => {
-        if (typeof obj === 'object' && obj !== null) {
-          if (!Array.isArray(obj)) {
-            for (const prop in obj) {
-              let entry = obj[prop];
-              if (typeof entry === 'string' && entry.toLowerCase().includes(query)) {
-                if (!result.some(match => JSON.stringify(match) === JSON.stringify(obj))) {
-                  result.push(obj)
-                  finalResult.push({...obj, Type: level})
-                }
-              }
-              getData(entry, level);
-            }
-          } else {
-            obj.forEach(array => {
-              let inferredType = level;
-              for (const key in array) {
-                if (typeof array[key] === 'object' && array[key] !== null) {
-                  if (Array.isArray(array[key])) {
-                    inferredType = key
-                  } 
-                }
-              }
-              getData(array, inferredType);
-            });
-          }
-        }
-      }
-      getData(regions);
       searchRes.innerHTML = '';
-      finalResult.forEach(item => {
+      data.forEach(item => {
         display(item, query);
       });
-    });
-}
+    })
+  .catch(err => console.error('Error fetching search results', err));
+};
